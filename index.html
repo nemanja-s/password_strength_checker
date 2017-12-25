@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Password Strength Checker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/password_strength_checker.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h2>How strong is your password?</h2>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-key fa-fw" style="color:black"></i></span>
+                <input class="form-control" type="password" id="passField" placeholder="Password">&nbsp;&nbsp;
+                <i id="checkIcon"></i>
+            </div>
+            <input type="checkbox" id="showPass">Show Password
+            <h5>A strong password should contain:</h5>
+            <table>
+                <tr>
+                    <td width="10%"><i id="upperCase"></i></td>
+                    <td id="upperCaseText">At least one big letter</td>
+                </tr>
+                <tr>
+                    <td><i id="isNumber"></i></td>
+                    <td id="isNumberText">At least one number</td>
+                </tr>
+                <tr>
+                    <td><i id="lowerCase"></i></td>
+                    <td id="lowerCaseText">At least one small letter</td>
+                </tr>
+                <tr>
+                    <td><i id="enoughChar"></i></td>
+                    <td id="enoughCharText">At least 8 characters</td>
+                </tr>
+                <tr>
+                    <td><i id="specChar"></i></td>
+                    <td id="specCharText">At least one special character</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/password_strength_checker.js" type="text/javascript"></script>
+</body>
+
+</html>
